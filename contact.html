@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peddapalli District Collectorate</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Centering the slider and setting its size */
+        .main-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh; 
+            /* This ensures that the section takes full screen height */
+        }
+
+        .slider {
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            
+            
+        }
+
+        .slider img {
+            width: 100%;
+            height: 100%;
+            display: none;
+        
+        }
+
+        .slider img:first-child {
+            display: block;
+        }
+
+        /* Button styles for slider navigation */
+        .slider button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .slider button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .slider button.left {
+            left: 0;
+        }
+
+        .slider button.right {
+            right: 0;
+        }
+
+        .footer-content{
+
+            display:grid;
+            grid-template-columns:1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="../images/telangana_logo.png" alt="telangana_logo" class="logo">
+            <h1>Peddapalli District Collectorate</h1>
+        </div>
+        <div class="header-right">
+            <div class="cmTxt">
+                <div class="kcrTxt">Sri A. Revanth Reddy</div> 
+                <div class="tsTxt">Hon'ble Chief Minister</div> 
+            </div>
+            <div class="cmThumb">
+                <img src="../images/cm.png" alt="cm sir pic">
+            </div>
+            <div class="cmTxt">
+                <div class="kcrTxt">Sri D.Sridhar Babu</div> 
+                <div class="tsTxt">Hon'ble Minister for IT</div> 
+            </div>
+            <div class="cmThumb">
+                <img src="../images/it.png" alt="75th Azadi Ka Amrit Mahotsav">
+            </div>
+        </div>
+    </header>
+
+    
+      
+            <div class="navbar">
+           <a href="main.html">Home</a>
+
+            <div class="dropdown">
+    <button class="dropbtn">About us   <img src="../images/down.gif" class="downarrowclass" style="border:0;">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">History</a>
+      <a href="#">Collector Profile</a>
+      <a href="#">Previous Collector Details</a>
+      <a href="#">Buildings</a>
+      <a href="#">Administrative details</a>
+    </div>
+  </div>
+            
+
+            
+            <div class="dropdown">
+    <button class="dropbtn">About district   <img src="../images/down.gif" class="downarrowclass" style="border:0;">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">History</a>
+      <a href="#">Map of District</a>
+      <a href="#">Demography</a>
+      <a href="#">Mandals and Pincodes</a>
+      <a href="#">Public Utilities</a>
+    </div>
+  </div>
+
+            
+            <div class="dropdown">
+    <button class="dropbtn">Media Gallery   <img src="../images/down.gif" class="downarrowclass" style="border:0;">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Video Gallery</a>
+      <a href="#">Photo Gallery</a>
+      <a href="#"> Events</a>
+    </div>
+  </div>
+
+            <div class="dropdown">
+    <button class="dropbtn">Services   <img src="../images/down.gif" class="downarrowclass" style="border:0;">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Service 1</a>
+      <a href="#">Service 2</a>
+      <a href="#">Service 3</a>
+      <a href="#">Service 4</a>
+      <a href="#">Service 5</a>
+    </div>
+  </div>
+
+            <a href="noti.html">Notifications</a>
+
+            <a href="login.html">Login</a>
+              <div class="dropdown">
+    <button class="dropbtn">Grievances   <img src="../images/down.gif" class="downarrowclass" style="border:0;">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">People Support</a>
+      <a href="#">Feedback</a>
+      
+    </div>
+  </div>
+
+            <a  class="contact-info" href="contact.html">Contact</a>
+      
+    </div>
+
+    
+<br>
+    <footer>
+        <div class="footer-content">
+            <div class="para1">Content owned by <b>District Administration</b><br>
+            mail:<a href="mailto:Email">team@gmail.com</a>
+            <br>Helpline: <a href="tel:+91 1234567890">77********75</a>
+            </div>
+            <div class="para2">Peddapalli, Developed and hosted by <b>JNTUHUCEM</b><br> Department of <b>CSE</b><br>
+            <a href="https://jntuhcem.ac.in/">JNTUHCEM</a></div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

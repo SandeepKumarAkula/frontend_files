@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peddapalli District Collectorate</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Centering the slider and setting its size */
+        .main-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh; 
+            /* This ensures that the section takes full screen height */
+        }
+
+        .slider {
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            
+            
+        }
+
+        .slider img {
+            width: 100%;
+            height: 100%;
+            display: none;
+        border-radius:20px;
+        }
+
+        .slider img:first-child {
+            display: block;
+        }
+
+        /* Button styles for slider navigation */
+        .slider button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .slider button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .slider button.left {
+            left: 0;
+        }
+
+        .slider button.right {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="../images/telangana_logo.png" alt="telangana_logo" class="logo">
+            <h1>Peddapalli District Collectorate</h1>
+        </div>
+        <div class="header-right">
+            <div class="cmTxt">
+                <div class="kcrTxt">Sri A. Revanth Reddy</div> 
+                <div class="tsTxt">Hon'ble Chief Minister</div> 
+            </div>
+            <div class="cmThumb">
+                <img src="../images/cm.png" alt="cm sir pic">
+            </div>
+            <div class="cmTxt">
+                <div class="kcrTxt">Sri D.Sridhar Babu</div> 
+                <div class="tsTxt">Hon'ble Minister for IT</div> 
+            </div>
+            <div class="cmThumb">
+                <img src="../images/it.png" alt="75th Azadi Ka Amrit Mahotsav">
+            </div>
+        </div>
+    </header>
+
+    
+      
+            <div class="navbar">
+           <a href="main.html">Home</a>
+
+            <div class="dropdown">
+    <button class="dropbtn">About us  <img src="../images/down.gif" class="downarrowclass" style="border:0;">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">History</a>
+      <a href="#">Collector Profile</a>
+      <a href="#">Previous Collector Details</a>
+      <a href="#">Buildings</a>
+      <a href="#">Administrative details</a>
+    </div>
+  </div>
+            
+
+            
+            <div class="dropdown">
+    <button class="dropbtn">About district   <img src="../images/down.gif" class="downarrowclass" style="border:0;">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">History</a>
+      <a href="#">Map of District</a>
+      <a href="#">Demography</a>
+      <a href="#">Mandals and Pincodes</a>
+      <a href="#">Public Utilities</a>
+    </div>
+  </div>
+
+            
+            <div class="dropdown">  
+    <button class="dropbtn">Media Gallery  <img src="../images/down.gif" class="downarrowclass" style="border:0;">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Video Gallery</a>
+      <a href="#">Photo Gallery</a>
+      <a href="#"> Events</a>
+    </div>
+  </div>
+
+            <div class="dropdown">
+    <button class="dropbtn">Services   <img src="../images/down.gif" class="downarrowclass" style="border:0;">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Service 1</a>
+      <a href="#">Service 2</a>
+      <a href="#">Service 3</a>
+      <a href="#">Service 4</a>
+      <a href="#">Service 5</a>
+    </div>
+  </div>
+
+            <a href="noti.html">Notifications</a>
+
+            <a href="login.php">Login</a>
+              <div class="dropdown">
+    <button class="dropbtn">Grievances   <img src="../images/down.gif" class="downarrowclass" style="border:0;">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">People Support</a>
+      <a href="#">Feedback</a>
+      
+    </div>
+  </div>
+
+            <a  class="contact-info" href="contact.html">Contact</a>
+      
+    </div>
+
+    <section class="main-content">
+        <aside class="sidebar">
+            <h2>Events</h2>
+            <ul>
+                <li><a href="#">event 1</a></li>
+                <li><a href="#">event 2</a></li>
+                <li><a href="#">event 3</a></li>
+                <li><a href="#">event 4</a></li>
+                <li><a href="#">event 5</a></li>
+                <li><a href="#">event 6</a></li>
+                <li><a href="#">event 7</a></li>
+            </ul>
+        </aside>
+
+        <div class="main-section">
+            <!-- Image Slider -->
+            <div class="slider">
+                <img src="../images/build_image.jpg" alt="Image 1">
+                <img src="../images/collector.jpeg" alt="Image 2">
+                <img src="../images/telangana_logo.png" alt="Image 3">
+                <button class="left" onclick="prevSlide()">&#10094;</button>
+                <button class="right" onclick="nextSlide()">&#10095;</button>
+            </div>
+
+            
+        </div><br>
+        
+
+        <aside class="judgment-orders">
+            <h2>Latest News / Orders</h2>
+            <ul>
+                <li><a href="#">CIVIL REVISION PETITION NO. 426 OF 2023 (IPR) dated 07.06.2024</a></li>
+                <li><a href="#">WP NO. ......</a></li>
+            </ul>
+        </aside>
+    </section>
+    <br>
+    <center>
+    <h1>Welcome to Peddapalli District Collectorate!</h1><br>
+    <p style="margin-left:120px; margin-right:120px; font-family: muli; letter-spacing: 1.8px;">Peddapalli, located in the heart of Telangana, is a district rich in history, culture, and natural beauty. It is known for its agricultural prominence, vibrant villages, and the spirit of its people. As a fast-growing district, Peddapalli plays a vital role in the state’s development and progress.
+
+The Peddapalli District Collectorate is committed to ensuring transparent, responsive, and efficient governance. We strive to serve the people by offering various services, managing resources, and fostering development across sectors including education, healthcare, infrastructure, and rural development.</p>
+    </center>
+<br>
+<br>
+    <footer>
+        <div class="footer-content">
+            <p class="para1">Content owned by <b>District Administration</b></p>
+            <p class="para2">© Peddapalli, Developed and hosted by <b>JNTUHUCEM</b><br> Department of <b>CSE</b></p>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slider img');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+            currentSlideIndex = index;
+        }
+
+        function nextSlide() {
+            currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+            showSlide(currentSlideIndex);
+        }
+
+        function prevSlide() {
+            currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+            showSlide(currentSlideIndex);
+        }
+
+        // Initialize first slide
+        showSlide(currentSlideIndex);
+
+        // Auto slide every 3 seconds
+        setInterval(nextSlide, 3000);
+    </script>
+</body>
+</html>
